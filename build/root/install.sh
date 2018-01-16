@@ -11,7 +11,7 @@ pacman_packages="pygtk python2-service-identity python2-mako python2-notify gnu-
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
-	pacman -S --needed $pacman_packages --noconfirm
+	pacman -Syy --needed $pacman_packages --noconfirm
 fi
 
 # container perms
